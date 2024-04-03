@@ -8,7 +8,7 @@ process countSequences {
         stdout
 
     """
-    pigz -cd $input | wc -l
+    gzip -cd $input | wc -l
     """
 }
 
